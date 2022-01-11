@@ -1,13 +1,46 @@
+console.log("hola mundo")
+
+
 function sum(a, b) {
-  return;
+
+  if(!a && !b ) {
+    return 0
+  }
+  
+  // EN CASO DE QUE EL SEGUNDO ARGUMENTO NO EXISTA
+  if(!b) {
+    b = 0
+  }
+
+
+  const total = a + b
+
+  return total;
 }
 
 function subtract(a, b) {
-  return;
+ 
+  if(!a && !b ) {
+    return 0
+  }
+
+  if (!b) {
+    b = 0
+  }
+ 
+  return a - b;
 }
 
 function divide(a, b) {
-  return;
+  
+
+if (b === 0) {
+  return error("division entre 0")
+}
+  
+  const total = a / b
+  return total;
+
 }
 
 function multiply(a, b) {
